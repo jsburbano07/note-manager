@@ -13,7 +13,7 @@ async function bootstrap() {
   })
   app.use(morgan('dev'))
   app.useGlobalPipes(new ValidationPipe());
-  await app.listen(process.env.PORT || "0.0.0.0");
+  await app.listen(process.env.PORT || 3000);
   console.log(process.env.HOST_WEB)
 }
 bootstrap();
